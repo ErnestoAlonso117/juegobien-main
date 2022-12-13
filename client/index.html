@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Piedra,Papel,Tijera,Lagarto,Spock pero de Warhammer</title>
+        <link rel="stylesheet" href="styles/main.css">
+      </head>
+      <body>
+        <div class="mainframe">
+            <ul id="events"></ul>
+            <div class="controls">
+              <div class="chat-wrapper">
+                <form id="chatform">
+                <input id="chat">
+                <button class="enviar"> Enviar Mensaje</button>
+                </form>
+              </div>
+              <div id="button-wrapper">
+                <button id="GuardiaImperial">Guardia Imperial</button>
+                <button id="Tyranido">Bestia Tiranida</button>
+                <button id="GuerreroTau">Guerrero Tau</button>
+                <button id="GuerreroKai">Guerrero Kai</button>
+                <button id="MarineDelCaos">Marine del Caos</button>
+              </div>
+            </div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="src/client.js"></script>
+      </body>
+</html>
